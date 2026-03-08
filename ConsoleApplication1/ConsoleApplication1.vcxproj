@@ -105,13 +105,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\khach\source\repos\ConsoleApplication1\ConsoleApplication1\shaders;C:\Users\khach\Desktop\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\Users\khach\Desktop\glad\include\glad;$(ProjectDir);$(ProjectDir)/include;C:\Users\khach\Desktop\glad\include\;C:\Users\khach\source\repos\ConsoleApplication1\ConsoleApplication1\include\glm</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)include;$(GLFW_INCLUDE_DIR);$(GLAD_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\khach\Desktop\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\lib-vc2022</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);glfw3.lib; opengl32.lib </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(GLFW_LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);glfw3.lib;opengl32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
