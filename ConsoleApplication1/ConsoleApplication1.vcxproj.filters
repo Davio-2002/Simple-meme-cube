@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{747f4a00-a7df-41f5-9be6-c6f8b6428d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{1df68e05-41b4-4b65-b03b-cfb851f9e27f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\shaders\Shader.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\third-party\glad.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\third-party\stb.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="include\third-party\glm\glm.cppm">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\VertexBuffer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\IndexBuffer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\VertexAttribute.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mini_audio_engine\Audio.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shaders\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\third-party\stb_image.h" />
+    <ClInclude Include="include\third-party\glm\simd\exponential.h" />
+    <ClInclude Include="include\third-party\glm\simd\common.h" />
+    <ClInclude Include="include\third-party\glm\vector_relational.hpp" />
+    <ClInclude Include="include\third-party\glm\vec4.hpp" />
+    <ClInclude Include="include\third-party\glm\vec3.hpp" />
+    <ClInclude Include="include\third-party\glm\vec2.hpp" />
+    <ClInclude Include="include\third-party\glm\trigonometric.hpp" />
+    <ClInclude Include="include\third-party\glm\packing.hpp" />
+    <ClInclude Include="include\third-party\glm\matrix.hpp" />
+    <ClInclude Include="include\third-party\glm\mat4x4.hpp" />
+    <ClInclude Include="include\third-party\glm\mat4x3.hpp" />
+    <ClInclude Include="include\third-party\glm\mat4x2.hpp" />
+    <ClInclude Include="include\third-party\glm\mat3x4.hpp" />
+    <ClInclude Include="include\third-party\glm\mat3x3.hpp" />
+    <ClInclude Include="include\third-party\glm\mat3x2.hpp" />
+    <ClInclude Include="include\third-party\glm\mat2x4.hpp" />
+    <ClInclude Include="include\third-party\glm\mat2x3.hpp" />
+    <ClInclude Include="include\third-party\glm\mat2x2.hpp" />
+    <ClInclude Include="include\third-party\glm\integer.hpp" />
+    <ClInclude Include="include\third-party\glm\glm.hpp" />
+    <ClInclude Include="include\third-party\glm\geometric.hpp" />
+    <ClInclude Include="include\third-party\glm\fwd.hpp" />
+    <ClInclude Include="include\third-party\glm\ext.hpp" />
+    <ClInclude Include="include\third-party\glm\exponential.hpp" />
+    <ClInclude Include="include\third-party\glm\common.hpp" />
+    <ClInclude Include="include\third-party\glm\simd\vector_relational.h" />
+    <ClInclude Include="include\third-party\glm\simd\trigonometric.h" />
+    <ClInclude Include="include\third-party\glm\simd\platform.h" />
+    <ClInclude Include="include\third-party\glm\simd\packing.h" />
+    <ClInclude Include="include\third-party\glm\simd\neon.h" />
+    <ClInclude Include="include\third-party\glm\simd\matrix.h" />
+    <ClInclude Include="include\third-party\glm\simd\integer.h" />
+    <ClInclude Include="include\third-party\glm\simd\geometric.h" />
+    <ClInclude Include="include\renderer\VertexBuffer.h" />
+    <ClInclude Include="include\renderer\VertexAttribute.h" />
+    <ClInclude Include="include\renderer\IndexBuffer.h" />
+    <ClInclude Include="include\transform\Transform.hpp" />
+    <ClInclude Include="include\third-party\audio_lib\miniaudio.h" />
+    <ClInclude Include="include\mini_audio_engine\Audio.h" />
+    <ClInclude Include="include\transform\Camera.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\GLSL\triangle_vertex.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\GLSL\triangle_fragment.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\wall.jpg" />
+    <Image Include="images\minecraft_brick.jpg" />
+    <Image Include="images\verbatim_01.png" />
+    <Image Include="images\verbatim_02.png" />
+    <Image Include="images\pointers.png" />
+    <Image Include="images\meth.png" />
+    <Image Include="images\walter.png" />
+    <Image Include="images\stare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="include\third-party\glm\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="audio\xqc_happy.mp3" />
+    <Media Include="audio\xqc_sad.mp3" />
+  </ItemGroup>
+</Project>

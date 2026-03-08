@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b5663dff-3270-4c7f-bafa-f9611b0bdef1}</ProjectGuid>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\khach\source\repos\ConsoleApplication1\ConsoleApplication1\shaders;C:\Users\khach\Desktop\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\Users\khach\Desktop\glad\include\glad;$(ProjectDir);$(ProjectDir)/include;C:\Users\khach\Desktop\glad\include\;C:\Users\khach\source\repos\ConsoleApplication1\ConsoleApplication1\include\glm</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\khach\Desktop\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\lib-vc2022</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);glfw3.lib; opengl32.lib </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mini_audio_engine\Audio.h" />
+    <ClInclude Include="include\third-party\audio_lib\miniaudio.h" />
+    <ClInclude Include="include\third-party\glm\common.hpp" />
+    <ClInclude Include="include\third-party\glm\exponential.hpp" />
+    <ClInclude Include="include\third-party\glm\ext.hpp" />
+    <ClInclude Include="include\third-party\glm\fwd.hpp" />
+    <ClInclude Include="include\third-party\glm\geometric.hpp" />
+    <ClInclude Include="include\third-party\glm\glm.hpp" />
+    <ClInclude Include="include\third-party\glm\integer.hpp" />
+    <ClInclude Include="include\third-party\glm\mat2x2.hpp" />
+    <ClInclude Include="include\third-party\glm\mat2x3.hpp" />
+    <ClInclude Include="include\third-party\glm\mat2x4.hpp" />
+    <ClInclude Include="include\third-party\glm\mat3x2.hpp" />
+    <ClInclude Include="include\third-party\glm\mat3x3.hpp" />
+    <ClInclude Include="include\third-party\glm\mat3x4.hpp" />
+    <ClInclude Include="include\third-party\glm\mat4x2.hpp" />
+    <ClInclude Include="include\third-party\glm\mat4x3.hpp" />
+    <ClInclude Include="include\third-party\glm\mat4x4.hpp" />
+    <ClInclude Include="include\third-party\glm\matrix.hpp" />
+    <ClInclude Include="include\third-party\glm\packing.hpp" />
+    <ClInclude Include="include\third-party\glm\simd\common.h" />
+    <ClInclude Include="include\third-party\glm\simd\exponential.h" />
+    <ClInclude Include="include\third-party\glm\simd\geometric.h" />
+    <ClInclude Include="include\third-party\glm\simd\integer.h" />
+    <ClInclude Include="include\third-party\glm\simd\matrix.h" />
+    <ClInclude Include="include\third-party\glm\simd\neon.h" />
+    <ClInclude Include="include\third-party\glm\simd\packing.h" />
+    <ClInclude Include="include\third-party\glm\simd\platform.h" />
+    <ClInclude Include="include\third-party\glm\simd\trigonometric.h" />
+    <ClInclude Include="include\third-party\glm\simd\vector_relational.h" />
+    <ClInclude Include="include\third-party\glm\trigonometric.hpp" />
+    <ClInclude Include="include\third-party\glm\vec2.hpp" />
+    <ClInclude Include="include\third-party\glm\vec3.hpp" />
+    <ClInclude Include="include\third-party\glm\vec4.hpp" />
+    <ClInclude Include="include\third-party\glm\vector_relational.hpp" />
+    <ClInclude Include="include\renderer\IndexBuffer.h" />
+    <ClInclude Include="include\transform\Camera.hpp" />
+    <ClInclude Include="include\transform\Transform.hpp" />
+    <ClInclude Include="shaders\Shader.h" />
+    <ClInclude Include="include\third-party\stb_image.h" />
+    <ClInclude Include="include\renderer\VertexAttribute.h" />
+    <ClInclude Include="include\renderer\VertexBuffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\GLSL\triangle_fragment.frag" />
+    <None Include="shaders\GLSL\triangle_vertex.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\mini_audio_engine\Audio.cpp" />
+    <ClCompile Include="include\third-party\glm\glm.cppm" />
+    <ClCompile Include="src\third-party\glad.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\renderer\IndexBuffer.cpp" />
+    <ClCompile Include="src\renderer\VertexAttribute.cpp" />
+    <ClCompile Include="src\renderer\VertexBuffer.cpp" />
+    <ClCompile Include="src\shaders\Shader.cpp" />
+    <ClCompile Include="src\third-party\stb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\meth.png" />
+    <Image Include="images\minecraft_brick.jpg" />
+    <Image Include="images\pointers.png" />
+    <Image Include="images\stare.png" />
+    <Image Include="images\verbatim_01.png" />
+    <Image Include="images\verbatim_02.png" />
+    <Image Include="images\wall.jpg" />
+    <Image Include="images\walter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="include\third-party\glm\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="audio\xqc_happy.mp3" />
+    <Media Include="audio\xqc_sad.mp3" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
